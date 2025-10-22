@@ -35,3 +35,29 @@ const myfunction = function(){
 }
 
 console.log(typeof(bigNumber)); 
+
+
+
+// ******************************** stack and heap memory **************************
+
+// Primitive : stack memory
+// Reference : heap memory
+
+let myInstaName = "Rajaryan.com"
+let AnotherName = myInstaName
+AnothersName  = "very important person"
+
+console.log(AnotherName);
+console.log(myInstaName);
+
+let userOne= {
+    email : "user@google.com",
+    upi : "user@upi"
+}
+
+let Usertwo = userOne 
+
+Usertwo.email = "aryan@google.com"
+
+console.log(userOne.email);
+console.log(Usertwo.email);
